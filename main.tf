@@ -53,7 +53,7 @@ resource "kubernetes_deployment" "default" {
             mount_path = "${var.primary_mount_path}"
           }
           volume_mount {
-            name = "${var.sapp_name}"
+            name = "${var.app_name}"
             mount_path = "${var.secondary_mount_path}"
             sub_path = "${var.secondary_sub_path}"
           }
